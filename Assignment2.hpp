@@ -7,3 +7,5 @@ std::vector<std::string> getWord(std::string wordlist);
 bool declarativeStatment(std::vector<std::string> sentence);
 
 bool assignmentStatment(std::vector<std::string> sentence);
+
+bool arithmeticStatment(std::vector<std::string> sentence);

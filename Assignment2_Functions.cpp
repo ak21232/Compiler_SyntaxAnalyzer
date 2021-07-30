@@ -64,3 +64,18 @@ bool assignmentStatment(std::vector<std::string> sentence){
   }
   return correctSyntax;
 }
+
+bool arithmeticStatment(std::vector<std::string> sentence){
+  bool correctSyntax = false;
+  for (int i = 1; i < sentence.size(); i++){
+    std::vector<std::string> wordList = getWord(sentence[i]);
+    if (wordList[0] != "bool" && wordList[0] != "float" && wordList[0] != "int" && wordList[1] != "bool" && wordList[1] != "int" && wordList[1] != "float" && wordList[2] != "+" &&  wordList[1] != "-" && wordList[1] != "*" && wordList[1] != "/" && wordList[1] != "%" && (wordList[2] == "+" ||  wordList[2] == "-" || wordList[2] == "*" || wordList[2] == "/" || wordList[2] != "%") && wordList[3] != "bool" && wordList[3] != "int" && wordList[3] != "float" && wordList[3] != "+" &&  wordList[3] != "-" && wordList[3] != "*" && wordList[3] != "/" && wordList[3] != "%"){
+      correctSyntax = true;
+    }
+    else {
+      correctSyntax = false;
+      break;
+    }
+  }
+  return correctSyntax;
+}
