@@ -1,3 +1,4 @@
+
 ! this is comment for this sample test code for the declarative operator, the ; is optional!
 int a = 1;
 bool b = false;

@@ -4,8 +4,10 @@ std::vector<std::string> readFileLine(std::string fileName);
 
 std::vector<std::string> getWord(std::string wordlist);
 
-bool declarativeStatment(std::vector<std::string> sentence);
+std::vector<std::string> removeBlankStrings(std::vector<std::string> &wordListNoComments);
 
-bool assignmentStatment(std::vector<std::string> sentence);
+bool declarativeStatment(std::vector<std::string> &sentence);
 
-bool arithmeticStatment(std::vector<std::string> sentence);
+bool assignmentStatment(std::vector<std::string> &sentence);
+
+bool arithmeticStatment(std::vector<std::string> &sentence);
