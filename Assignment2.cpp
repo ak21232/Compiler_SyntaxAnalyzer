@@ -14,7 +14,7 @@ int main(){
   std::cout << "\n\n";
   std::cout << "Assignment Test: " << '\n';
   if (assignmentTest == true){
-    for (int i = 1; i < words.size(); i++){
+    for (int i = 0; i < words.size(); i++){
       std::cout << words[i] << '\n';
       std::cout << "<Statement> -> <Assign> <Assign> -> <ID> = <Expression>" << '\n';
       std::cout << "Assigned correctly " <<'\n';
@@ -40,7 +40,7 @@ int main(){
 
   std::cout << "Arithmetic Expression Test: " << '\n';
   if (arithmeticTest == true){
-    for (int i = 1; i < words3.size(); i++){
+    for (int i = 0; i < words3.size(); i++){
       std::cout << words3[i] << '\n';
       std::cout << "<Expression> -> <Expression> + <Term> | <Expression> -<Term> | <Term>" << '\n';
       std::cout << "<Term> -> <Term> * <Factor> | <Term> / <Factor> | <Factor> " << '\n';

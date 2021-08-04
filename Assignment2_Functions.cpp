@@ -78,7 +78,7 @@ bool assignmentStatment(std::vector<std::string> &sentence){
 
 bool arithmeticStatment(std::vector<std::string> &sentence){
   bool correctSyntax = false;
-  //sentence = removeBlankStrings(sentence);
+  sentence = removeBlankStrings(sentence);
   for (int i = 1; i < sentence.size(); i++){
     std::vector<std::string> wordList = getWord(sentence[i]);
     if (wordList[0] != "bool" && wordList[0] != "float" && wordList[0] != "int" && wordList[1] != "bool" && wordList[1] != "int" && wordList[1] != "float" && wordList[2] != "bool" && wordList[2] != "float" && wordList[2] != "int" && wordList[0] != "+" &&  wordList[0] != "-" && wordList[0] != "*" && wordList[0] != "/" && wordList[0] != "%" && wordList[2] != "+" &&  wordList[2] != "-" && wordList[2] != "*" && wordList[2] != "/" && wordList[2] != "%" && (wordList[1] == "+" ||  wordList[1] == "-" || wordList[1] == "*" || wordList[1] == "/" || wordList[1] == "%") ){
